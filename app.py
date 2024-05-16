@@ -1,39 +1,48 @@
-import requests
-import json
+from llama_index.llms.ollama import Ollama
+from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
+from llama_index.embeddings.huggingface import HuggingFaceEmbedding
+from llama_index.core import Settings, StorageContext, load_index_from_storage
 import gradio as gr
 
-url="http://localhost:11434/api/generate"
+llm = Ollama(model="codellama", request_timeout=300.0)
+embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5")
 
-headers ={
-    "Content-Type":"application/json"
-}
+Settings.llm = llm
+Settings.embed_model = embed_model
 
-history=[]
+documents = SimpleDirectoryReader(
+    input_files=["./data/paul_graham_essay.txt"]
+).load_data()
 
-def generate_response(prompt):
-    history.append(prompt)
-    final_prompt = "\n".join(history)
+index = VectorStoreIndex.from_documents(documents)
 
-    data = {
-        "model":"codellama",
-        "prompt":final_prompt,
-        "stream":False
-    }
+index.storage_context.persist(persist_dir="data")
 
-    response = requests.post(url,headers=headers, data=json.dumps(data))
+# rebuild storage context
+storage_context = StorageContext.from_defaults(persist_dir="data")
 
-    if response.status_code ==200:
-        response = response.text
-        data=json.loads(response)
-        actual_response = data['response']
-        return actual_response
-    else:
-        print("error",response.text)
+# load index
+vector_index = load_index_from_storage(storage_context)
 
-interface = gr.Interface(
-        fn = generate_response,
-        inputs = gr.Textbox(lines=4,placeholder="Enter your Prompt"),
-        outputs = 'text'
-        theme=gr.themes.Glass().set(block_title_text_color= "black", body_background_fill="black", input_background_fill= "black", body_text_color="white")
-    )
-interface.launch()        
+query_engine = vector_index.as_query_engine(similarity_top_k=1)
+
+
+def query(text):
+    z = query_engine.query(text)
+    return z
+
+def interface(text):
+    z = query(text)
+    response = z.response
+    return response
+
+with gr.Blocks(theme=gr.themes.Glass().set(block_title_text_color= "black", body_background_fill="black", input_background_fill= "black", body_text_color="white")) as demo:
+    with gr.Row():
+        output_text = gr.Textbox(lines=20)
+        
+    with gr.Row():
+        input_text = gr.Textbox(label='Enter your query here')
+        
+    input_text.submit(fn=interface, inputs=input_text, outputs=output_text)
+                      
+demo.launch()
