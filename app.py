@@ -16,10 +16,10 @@ documents = SimpleDirectoryReader(
 
 index = VectorStoreIndex.from_documents(documents)
 
-index.storage_context.persist(persist_dir="data")
+index.storage_context.persist(persist_dir="storage")
 
 # rebuild storage context
-storage_context = StorageContext.from_defaults(persist_dir="data")
+storage_context = StorageContext.from_defaults(persist_dir="storage")
 
 # load index
 vector_index = load_index_from_storage(storage_context)
