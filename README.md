@@ -4,7 +4,7 @@ Uses
 
 https://ollama.com
 https://www.gradio.app/
-
+https://www.llamaindex.ai/
 
 ## Ollama
 1. Install ollama (https://ollama.com/) to ensure you can run a LLM locally
