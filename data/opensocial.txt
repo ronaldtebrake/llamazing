@@ -1,0 +1,95 @@
+Open Social is made to share
+Open Social is a top-tier SaaS company based in Amsterdam and Enschede, The Netherlands. Open Social is specialized in online community and membership management solutions. We have mastered the art of sharing, serving some of the biggest international NGOs as clients, including the UN, Greenpeace and Pachamama Alliance, and having won several international awards.
+
+Open Social places sharing at the heart of everything we do. Because sharing is what makes a group of individuals turn into a community. As people share their goals, their innovations, their knowledge and stories, they become a unified community that can change the world. 
+
+That is why we say Open Social is #MadeToShare.
+
+
+Open Social Management Team with founders
+Taco Potze (CEO) and Bram ten Hove (CTO)
+
+Our mission
+Become the world’s leading community engagement platform that grows with the ambition of its users.
+
+Our vision
+A pro-privacy, anti-monopoly and open web that inspires trusted connections and collaboration.
+
+Online Community Engagement Platform
+Open Social powers 1000+ communities
+
+Open Social’s purpose-built online community software allows organizations to create online spaces where members can communicate, collaborate, connect and share expertise and experiences from anywhere in the world.
+
+We currently serve 1000+ organizations around the world.
+
+Our values
+personal. friendly. open. collaborative.  positive. goal-driven. flexible. dedicated. ambitious. trustworthy. inclusive. competitive.
+
+Our superpowers
+multi-dimensional. mind reading. hive power. laser focus. multi-cultural polyglot. transparent. innovative. sustainable.
+
+Open Source vs Open Core Software
+Open-core is a business model for creating commercially produced open-source software. This model involves offering a “core” or feature-limited version of a software product as free and open-source software, while offering “commercial” versions or add-ons as proprietary software.
+
+Open Social’s core software is available as a public distribution and any member of the Drupal community can download the core Open Social code-base and use it in their own projects.
+
+As a SaaS company, we also offer Open Social as a subscription-based software to clients who need more advanced features, and more hands-on services. These are key services that certain business and organizations require to make sure their online communities run smoothly, are constantly maintained and professionally set-up and deployed.
+
+Open-Core Software
+Drupal Open Source Community
+Sharing knowledge & expertise
+with the open source community
+
+Open Social is built on top of a powerful Drupal CMS framework.
+
+This allows us to build amazing products drawing on the experience and expertise of a vibrant open-source community of innovators, developers and builders.
+
+Open Social is also an active participant in the Drupal community, and have taken part in events such as:
+
+DrupalCon New Orleans 2016
+Drupal Europe 2018
+DrupalCon Seattle 2019
+DrupalCon Amsterdam 2019
+DrupalCon Minneapolis 2020
+learn more about the benefits of open-source
+Our History
+How did Open Social get started?
+2008
+The Drupal Agency Days
+Open Social started as a successful and prestigious Drupal agency called GoalGorilla, based in the heart of Enschede, the Netherlands.
+
+As an agency we focused on developing unique software solutions for clients. One of our clients was Greenpeace International, who engaged us to build a Drupal-based online community and volunteer management platform for them. Greenpeace Greenwire, as the community was called, became the first version of Open Social’s online community software.
+2011-2015
+The Success of Greenpeace Greenwire
+Greenpeace Greenwire was hugely successful from the start, launching first in the Netherlands, and then internationally.
+
+Greenwire helped activate 90 000 volunteers to make the world a greener and more sustainable place. In the Netherlands alone Greenpeace Greenwire increased volunteering by 600%.
+
+* Dutch Interactive Award, 2015
+
+We won the Dutch Interactive Awards with Greenwire in 2015.
+
+2015
+Crowdfunding Open Social 1.0
+Version 1.0 of Open Social officially released after a successful round of equity crowdfunding.
+
+Open Social experienced 100% revenue growth in 2018 and in 2019.
+
+2016
+Open Social launches!
+With the success of Greenwire, we saw the viability of online community software as a core SaaS product. As a result, GoalGorilla officially relaunches as Open Social, an online community software solution SaaS company. We celebrate with a big party and even bigger things to come!
+2017
+Splash Awards
+* Splash Awards, 2017
+
+In 2017 Open Social was the overall winner of the Splash Awards with the GlobalDevHub.org project for the United Nations
+
+* Splash Awards, 2019
+
+In 2019 Open Social’s Victims Support The Netherlands won the Splash Award in the category of Social/Community.
+
+2020
+Raising €1.25 million seed investment
+In 2020, Open Social secured its largest investment to date. Peak Capital and Nimbus Ventures, two renowned venture capital investors focused on scale-ups, decided to invest EUR 1.25 million in Open Social.
+
+You can find Open Socials website URL at https://www.getopensocial.com

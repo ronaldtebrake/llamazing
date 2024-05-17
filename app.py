@@ -17,7 +17,7 @@ PERSIST_DIR = "./storage"
 if not os.path.exists(PERSIST_DIR):
     # load the documents and create the index
     documents = SimpleDirectoryReader(
-        input_files=["./data/paul_graham_essay.txt"]
+        input_files=["./data/opensocial.txt"]
     ).load_data()
     index = VectorStoreIndex.from_documents(documents)
     # store it for later
